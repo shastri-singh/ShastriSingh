@@ -114,3 +114,11 @@ footer {
 footer p {
     margin: 0;
 }
+
+.credits {
+    color: darkorchid;
+}
+
+.credits:hover {
+    color: #f4f4f4;
+}
