@@ -116,9 +116,53 @@ footer p {
 }
 
 .credits {
-    color: darkorchid;
+    color: mediumvioletred;
 }
 
 .credits:hover {
     color: #f4f4f4;
 }
+
+/* Small Screens */
+@media(max-width: 560px){
+    .showcase::after {
+        height: 50vh;
+    }
+
+    .content  {
+        top: 5%;
+        margin-top: 5px;
+    }
+
+    .content .logo {
+        height: 140px;
+        width: 140px;
+    }
+
+    .content .text {
+        display: none;
+    }
+
+    .grid-2, .grid-1 {
+        grid-template-columns: 1fr;
+    }
+
+    .services div {
+        border-bottom: #333 dashed 1px;
+        padding: 1.2rem 1rem;
+    }
+
+}
+
+/* Landscape */
+@media (max-height: 500px){
+    .content .title, .content .text {
+        display: none;
+    }
+
+    .content {
+        top: 5%;
+    }
+}
+
+
